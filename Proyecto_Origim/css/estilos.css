@@ -1,0 +1,1428 @@
+*{
+	padding: 0;
+	margin: 0 auto;
+	border: 0;
+	outline: inherit;
+	list-style: none;
+}
+body{
+	overflow-y: hidden;
+}
+/*Fuentes*/
+@font-face{
+	src: url(../fonts/coolvetica.ttf);
+	font-family: "coolvetica";
+}
+@font-face{
+	src:url(../fonts/fjallaOne.ttf);
+	font-family: "fjallaOne"
+}
+/* Fin Fuentes*/
+
+h2{
+	font-family: "coolvetica";
+	color: white;
+	font-size: 3.5em;
+}
+h3{
+	font-family: "fjallaOne";
+	font-size: 1em;
+}
+p{
+	font-family: "fjallaOne";
+	text-align: center;
+	font-size: 1.2em;
+	color: white;
+	text-shadow: 1px 2px 1px black;
+}
+.lienzo{
+	width:1700%;
+	height: 100vh;
+	background: #b0b9c1;
+}
+
+.navPrincipal{
+	position: fixed;
+	right: 0;
+	left: 0;
+	bottom: 30px;
+	z-index: 999;
+}
+.iconosSecciones{
+	width: 45%;
+}
+.iconosSecciones li{
+	width: 50px;
+	height: 50px;
+	position:relative; 
+	border-radius: 100%;
+	background: #3fa9f5;
+	float: left;
+	margin-left:calc(10% - 15px);
+	box-sizing: border-box;
+}
+.iconosSecciones li:nth-child(2){
+	padding: 4px 5px;
+}
+.iconosSecciones li:hover{
+	cursor: pointer;
+	background:red;
+}
+
+.iconoInicio{
+	width: 100%;
+	position: absolute;
+	left: 2px;
+	right: 0;
+	top: 2px;
+
+}
+.iconoOrigen{
+	width: 60%;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 2px;
+}
+.iconoGrecia{
+	width:85%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 5px;
+	bottom: 5px;
+}
+.iconoRoma{
+	width: 90%;
+	position: absolute;
+	left: 2px;
+	top: 2px;
+}
+.iconoEnigma{
+	width: 80%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2px;
+}
+.iconoModerna{
+	width: 85%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 2px;
+}
+
+.iconoSonido{
+	width: 20%;
+	float: left;
+}
+.iconoSonido li{
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: rgb(35, 113, 127);
+	padding: 11px 10px;
+	box-sizing: border-box;
+	position: relative;
+}
+.iconoSonido li:hover{
+	cursor: pointer;
+	background:red;
+}
+.iconoAudio{
+	position: absolute;
+	display: flex;
+}
+.audio{
+	width: 4px;
+	height: 15px;
+	border-radius: 50px;
+	background: white;
+	margin-right: 2px;
+}
+.audio:nth-child(1){
+	margin-top:6px;
+}
+.audio:nth-child(2){
+	margin-top: 3px;
+	height: 20px;
+}
+.audio:nth-child(3){
+	height: 27px;
+}
+.audio:nth-child(4){
+	height: 20px;
+	margin-top: 3px;
+}
+.audio:nth-child(5){
+	margin-top: 6px;
+}
+/*Inicio*/
+.inicio{
+	align-items: center;
+	width: 5.88%;
+	height:100vh;
+	float: left;
+	border-left: 1px solid white;
+	box-sizing: border-box;
+	background: #adf5e4;
+}
+.cartelAvance{
+	position: absolute;
+	text-align: center;
+	right: 100px;
+	bottom: -50px;
+	height: 395px;
+	width: 325px;
+	transform-origin: center bottom;
+	animation: cartelInicio 0.5s ease-in-out paused;
+}
+
+.cartelAvance h3{
+	width: 200px;
+    text-shadow: 1px 2px 1px #000000;
+    color: #ffffff;
+    position: absolute;
+    right: 70px;
+    bottom: 258px;
+    z-index: 100;
+    font-size: 1.2em;
+}
+.avance{
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+}
+.logo{
+	width: 40%;
+	position: absolute;
+	left: 0;
+	right: 0;
+}
+.logo img{
+	width: 100%;
+}
+/* Prehistoria*/
+
+.prehistoria{
+	width: 100%;
+	align-items: center;
+}
+.prehistoria .cont{
+	width: 5.88%;
+	height:100vh;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+/* Prehistoria primera parte*/
+.prehisUno{
+	width: 100%;
+	position: relative;
+	background: #1afcbf;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.montañaFondo{
+	position: absolute;
+	width: 100%;
+	bottom: 25px;
+}
+.montañaUno{
+	position: absolute;
+	width: 205%;
+	bottom: -50px;
+	left: -40px;
+	z-index: 500;
+}
+.montañaDos{
+	position: absolute;
+	width: 200%;
+	bottom: -80px;
+	
+}
+.suelo{
+	width: 100%;
+	height: 70px;
+	background: green;
+	position: absolute;
+	bottom: 0px;
+	z-index: 900
+}
+.contOrigen{
+	position: absolute;
+	height:60%;
+	text-align: center;
+	bottom: -500px;
+	right: 0px;
+	left: 0px;
+}
+.cartel{
+	position: absolute;
+	width: 30%;
+	right: 0;
+	left: 0;
+}
+.titulo{
+	line-height: 250%;
+	box-sizing: border-box;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	font-size: 2.8em;
+}
+.sol{
+	position: absolute;
+	top: -500px;
+	right: 400px;	 
+	z-index: 1;
+}
+.prehistoria .nubes img{
+	position: absolute;
+	top: -500px;
+}
+.prehistoria .nubes img:nth-child(1){
+	left: 100px;
+}
+.prehistoria .nubes img:nth-child(2){
+	left: 500px;
+}
+.prehistoria .nubes img:nth-child(3){
+	right: 200px;
+}
+.arbol{
+	width: 13%;
+	position: absolute;
+	left: 300px;
+	z-index: 700;
+}
+.mamut{
+	width: 14%;
+	position: absolute;
+	right: 200px;
+	top: -600px;
+	z-index: 901
+}
+/* Fin Prehistoria primera parte*/
+
+/* Prehistoria segunda parte*/
+.prehisDos{
+	position: relative;
+	background: #1afcbf;
+
+}
+.prehisDos .montañaUno{
+	left: -102%;
+}
+.prehisDos .montañaDos{
+	left: -100%;
+}
+.prehisDos .montañaFondo{
+	bottom: 50px;
+}
+
+.introduccion{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	margin-top: 20%;
+	box-sizing: border-box;
+	left: 0px;
+	right: 0px;
+}
+.prehistoria .introduccion img{
+	width: 70%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: -70px;
+	z-index: 301;
+}
+.introduccion p{
+	position: absolute;
+	z-index: 302;
+	left: 0;
+	right: 0;
+	top: -30px;
+}
+.prehisDos .arbol{
+	width: 15%;
+	right: -300px;
+}
+.arbolDos{
+	position: absolute;
+	width: 10%;
+	left:  100px;
+}
+/* Fin de Prehistoria segunda parte*/
+
+/* Prehistoria tercera parte*/
+.prehisTres {
+	position: relative;
+	background: #1afcbf;
+}
+
+.prehisTres .montañaFondo{
+	bottom: 75px;
+}
+
+.animacion{
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+
+}
+.animacion img{
+	position: absolute;
+	left: 14px;
+	right: 0;
+	top: -800px;
+	width: 40%;
+	z-index: 900;
+}
+.prehistoria .animacion img:nth-child(2){
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -500px;
+    width: 30%;
+    z-index: 901;
+    border-radius: 100px;
+}
+.prehistoria .animacion p{
+	position: absolute;
+	left: 0;
+	right: 500px;
+	top: 444px;
+	opacity: 0;
+	z-index: 902;
+	color: white;
+}
+.arboles .arbol:nth-child(1){
+	right: -500px;
+
+}
+.arboles .arbol:nth-child(2){
+	left: 70px;
+	bottom: 150px;
+}
+.cavernicola{
+	position: absolute;
+	left: 350px;
+	top: -800px;
+	z-index: 902;
+}
+/*Fin de Prehistoria tercera parte*/
+
+/* Prehistoria cuarta parte*/
+.prehisCuatro{
+	position: relative;
+}
+
+.prehisCuatro .animacion{
+	width: 800px;
+	height: 420px;
+	background: #7f0000;
+	margin-top: 10%;
+	opacity: 0.7;
+}
+.prehisCuatro .arboles .arbol:nth-child(2){
+	width: 50px;
+	height: 120px;
+	left: 200px;
+	margin:0px;
+}
+.prehisCuatro .caverna{
+	right: 50px;
+	bottom: 150px;
+}
+/* Fin de Prehistoria cuarta parte*/
+
+/* Realidad aumentada*/
+.realidadAumentada{
+	position: relative;
+}
+.instrucciones{
+	width: 500px;
+	height: 300px;
+	background: #7f0000;
+	margin-top: 15%;
+}
+.realidadAumentada .arboles .arbol:nth-child(2){
+	width: 50px;
+	height: 120px;
+	left: 200px;
+	margin:0px;
+}
+/* Fin de Realidad Aumentada*/
+/* Al desnudo*/
+.alDesnudo{
+	width: 100%;
+	align-items: center;
+}
+.alDesnudo .cont{
+	width: 5.88%;
+	height:100vh;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+/* Al desnudo
+ primera parte*/
+.greciaUno{
+	width: 100%;
+	position: relative;
+	background: #1afcbf;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.montañaFondoGrecia{
+	position: absolute;
+	width: 70%;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+}
+.montañaUnoGrecia{
+	position: absolute;
+	width: 50%;
+	bottom: -100px;
+	left: 0px;
+	z-index: 500;
+}
+.montañaDosGrecia{
+	position: absolute;
+    width: 63%;
+    bottom: -80px;
+    right: 0;
+    z-index: 5;
+	
+}
+.montañaTresGrecia{
+	position: absolute;
+	width: 60%;
+	bottom: -80px;
+	left: 0;
+	
+}
+.gimanasioGrecia{
+	width: 14%;
+	position: absolute;
+	right: 200px;
+	top: -600px;
+	z-index: 901
+}
+.alDesnudo .suelo{
+	width: 100%;
+	height: 70px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 900;
+}
+.alDesnudo .suelo img{
+	position: absolute;
+    bottom: -78px;
+    width: 101%;
+    left: -2px;
+}
+.contGrecia{
+	position: absolute;
+	height:60%;
+	text-align: center;
+	top: 90%;
+	right: 0px;
+	left: 0px;
+}
+.cartel{
+	position: absolute;
+	width: 30%;
+	right: 0;
+	left: 0;
+}
+
+
+.alDesnudo .arbol{
+	width: 13%;
+	position: absolute;
+	left: 250px;
+	z-index: 700;
+}
+.edificio{
+	width: 14%;
+	position: absolute;
+	right: 200px;
+	top: 0px;
+	z-index: 901
+}
+/* Fin Al desnudo primera parte*/
+/* Al desnudo segunda parte*/
+.greciaDos{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.greciaDos .montañaUno{
+	left: -102%;
+}
+.greciaDos .montañaDos{
+	left: -100%;
+}
+.greciaDos .montañaFondo{
+	bottom: 50px;
+}
+.alDesnudo .greciaDos .suelo img{
+	position: absolute;
+    bottom: -83px;
+    left: -3px;
+    width: 103%;
+}
+.greciaDos .montañaUnoGrecia{
+	width: 60%;
+    bottom: -66.7px;
+    z-index: 0;
+    left: -6px;
+}
+.greciaDos .montañaFondoGrecia{
+	width: 80%;
+}
+.greciaDos .montañaDosGrecia{
+	z-index: 0;
+
+}
+.introduccion{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	margin-top: 20%;
+	box-sizing: border-box;
+	left: 0px;
+	right: 0px;
+}
+.greciaDos .introduccion img{
+	width: 100%;
+	position: absolute;
+	right: 0;
+	left: -700px;
+	top: -50px;
+	opacity: 0;
+	z-index: 301;
+}
+.greciaDos .introduccion p{
+	position: absolute;
+	z-index: 302;
+	left: -700px;
+	right: 0;
+	top: -30px;
+	opacity: 0;
+	color: black;
+	text-shadow: 1px 2px 1px white;
+}
+.greciaDos .arbol{
+	width: 15%;
+	right: -300px;
+}
+.arbolDos{
+	position: absolute;
+	width: 10%;
+	left:  100px;
+}
+/* Fin de Al desnudo segunda parte*/
+/*  Al desnudo tercera parte*/
+.greciaTres{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.alDesnudo .greciaTres .suelo img{
+	position: absolute;
+    bottom: -81px;
+    left: -11px;
+    width: 103%;
+}
+.greciaTres .montañaUnoGrecia{
+	width: 60%;
+    bottom: -71px;
+    z-index: 0;
+    left: -6px;
+}
+.greciaTres .montañaFondoGrecia{
+	width: 80%;
+}
+.greciaTres .montañaDosGrecia{
+	width: 60%;
+	z-index: 1;
+
+}
+.alDesnudo .animacion img:nth-child(1){
+	top:650px;
+	opacity: 0;
+	z-index: 50;
+
+}
+.alDesnudo .animacion img:nth-child(2){
+	top: -280px;
+	left: 10px;
+	border-radius: 20px;
+	border: 10px solid white;
+	z-index: 49;
+}
+.alDesnudo .animacion p{
+	top: 370px;
+    position: absolute;
+    left: 0;
+	right: 0;
+	opacity: 0;
+    z-index: 50;
+}
+.griego{
+	position: absolute;
+	left: 350px;
+	top: -750px;
+	z-index: 902;
+}
+.edificioGrecia{
+	width: 14%;
+	position: absolute;
+	right: 200px;
+	top: -600px;
+	z-index: 901
+}
+/*  Fin Al desnudo tercera parte*/
+/* Fin Al desnudo*/
+/* Roma */
+.roma{
+	width: 100%;
+	align-items: center;
+}
+.roma .cont{
+	width: 5.88%;
+	height:100vh;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+ /*Roma primera parte*/
+.romaUno{
+	width: 100%;
+	position: relative;
+	background: #1afcbf;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.montañaFondoRoma{
+	position: absolute;
+	width: 90%;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+}
+.montañaUnoRoma{
+	position: absolute;
+	width: 102%;
+	bottom: -5px;
+	left: 0px;
+	z-index: 500;
+}
+.montañaDosRoma{
+	position: absolute;
+    width: 105%;
+    bottom: 50px;
+    right: 0;
+    z-index: 5;
+	
+}
+.montañaTresRoma{
+	position: absolute;
+	width: 60%;
+	bottom: -80px;
+	left: 0;
+	
+}
+.roma .suelo{
+	width: 100%;
+	height: 105px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 900;
+	background: #846448;
+}
+.contRoma{
+	position: absolute;
+	height:60%;
+	text-align: center;
+	top: 90%;
+	right: 0px;
+	left: 0px;
+}
+.cartel{
+	position: absolute;
+	width: 30%;
+	right: 0;
+	left: 0;
+}
+
+.roma .arbol{
+	width: 13%;
+	position: absolute;
+	left: 200px;
+	z-index: 700;
+}
+.romaUno .edificioRoma{
+	width: 12%;
+	position: absolute;
+	right: 200px;
+	top: -600px;
+	z-index: 901
+}
+/* Fin Roma primera parte*/
+/* Roma segunda parte*/
+.romaDos{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.roma .romaDos .suelo img{
+	position: absolute;
+    bottom: -83px;
+    left: -3px;
+    width: 103%;
+}
+.romaDos .montañaDosRoma{
+	width: 104%;
+	bottom: 48px
+}
+.romaDos .montañaUnoRoma{
+	width: 101%;
+    bottom: -1px;
+    z-index: 500;
+    left: 0;
+}
+.romaDos .montañaFondoRoma{
+	width: 80%;
+}
+.introduccion{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	margin-top: 20%;
+	box-sizing: border-box;
+	left: 0px;
+	right: 0px;
+}
+.romaDos .introduccion img{
+	width: 70%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 600px;
+	z-index: 500;
+}
+.romaDos .introduccion p{
+	position: absolute;
+	z-index: 302;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	top: 10px;
+	color: white;
+	text-shadow: 1px 2px 1px black;
+	z-index: 501;
+}
+.romaDos .arbol{
+	width: 15%;
+	right: -300px;
+}
+.arbolDos{
+	position: absolute;
+	width: 13%;
+	left:  150px;
+	z-index: 500;
+}
+/* Fin de Roma segunda parte*/
+/*  Roma tercera parte*/
+.romaTres{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.roma .romaTres .suelo img{
+	position: absolute;
+    bottom: -81px;
+    left: -11px;
+    width: 103%;
+}
+.romaTres .montañaUnoRoma{
+	width: 117%;
+    bottom: -17px;
+    left: 0;
+}
+.romaTres .montañaFondoRoma{
+	width: 100%;
+}
+.romaTres .montañaDosRoma{
+	width: 100%;
+    z-index: 1;
+    bottom: 62px;
+    left: -6px;
+}
+.roma .animacion img:nth-child(1){
+	width: 30%;
+	top: 50px;
+	z-index: 4;
+	transform-origin: center bottom;
+	animation: 0.5s bandera ease-in-out paused;
+}
+.roma .animacion img:nth-child(2){
+	width: 30%;
+	top: 75px;
+	left: 10px;
+	border-radius: 50px;
+	opacity: 0;
+}
+.roma .animacion p{
+	position: absolute;
+	top: -500px;
+	left: 0;
+	right: 0px;
+}
+.romano{
+	position: absolute;
+	left: 350px;
+	top: -750px;
+	z-index: 902;
+}
+.romaTres .edificioRoma{
+	width: 14%;
+	position: absolute;
+	right: 200px;
+	top: 0px;
+	z-index: 901
+}
+/*  Fin Roma tercera parte*/
+/* Fin Roma*/
+/* Edad Media */
+.enigma{
+	width: 100%;
+	align-items: center;
+}
+.enigma .cont{
+	width: 5.88%;
+	height:100vh;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+ /*Roma primera parte*/
+.enigmaUno{
+	width: 100%;
+	position: relative;
+	background: #1afcbf;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.montañaFondoEnigma{
+	position: absolute;
+	width: 60%;
+	right: 0;
+	bottom: -40px;
+}
+.montañaUnoEnigma{
+	position: absolute;
+	width: 100%;
+	bottom: -5px;
+	left: 0px;
+	z-index: 500;
+}
+.montañaDosEnigma{
+	position: absolute;
+    width: 70%;
+    bottom: 100px;
+    left: 0;
+    z-index: 0;
+	
+}
+.montañaTresEnigma{
+	position: absolute;
+	width: 60%;
+	bottom: -80px;
+	left: 0;
+	
+}
+.enigma .suelo{
+	width: 100%;
+	height: 105px;
+	position: absolute;
+	bottom: 0px;
+	z-index: 900;
+	background: #9c6251;
+}
+.contEnigma{
+	position: absolute;
+	height:60%;
+	text-align: center;
+	top: 90%;
+	right: 0px;
+	left: 0px;
+}
+.cartel{
+	position: absolute;
+	width: 30%;
+	right: 0;
+	left: 0;
+}
+
+
+
+
+
+.enigmaUno .arbol{
+	width: 15%;
+	position: absolute;
+	left: 200px;
+
+	z-index: 700;
+}
+.enigmaUno .edificioRoma{
+	width: 12%;
+	position: absolute;
+	right: 200px;
+	top: 0px;
+	z-index: 901
+}
+.castillo{
+	width: 16%;
+	position: absolute;
+	right: 200px;
+	top: -603px;
+	z-index: 901
+}
+/* Fin Enigma primera parte*/
+/* Enigma segunda parte*/
+.enigmaDos{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.enigma .enigmaDos .suelo img{
+	position: absolute;
+    bottom: -83px;
+    left: -3px;
+    width: 103%;
+}
+.enigmaDos .montañaUnoEnigma{
+	width: 100%;
+    bottom: 1px;
+    z-index: 00;
+    left: 0;
+}
+.enigmaDos .montañaFondoEnigmaDos{
+	position: absolute;
+	width: 40%;
+	left: 0;
+	bottom: -20px;
+}
+.enigmaDos .montañaDosEnigmaDos{
+	position: absolute;
+	width: 15%;
+	z-index: 0;
+	bottom: 0px;
+	right:  0;
+}
+.enigmaTres .animacion img:nth-child(2){
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -500px;
+    width: 30%;
+    z-index: 901;
+    border-radius: 100px;
+}
+.introduccion{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	margin-top: 20%;
+	box-sizing: border-box;
+	left: 0px;
+	right: 0px;
+}
+.enigmaDos .introduccion img{
+	width: 80%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: -7250px;
+	z-index: 301;
+}
+.enigmaDos .introduccion p{
+	position: absolute;
+	z-index: 302;
+	left: 0;
+	right: 0;
+	top: 500px;
+	color: black;
+	text-shadow: 1px 2px 1px white;
+}
+.enigmaDos .arbol{
+	width: 15%;
+	right: -300px;
+
+}
+.arbolDos{
+	position: absolute;
+	width: 13%;
+	left:  150px;
+
+	z-index: 500;
+}
+/* Fin de Enigma segunda parte*/
+/*  Enigma tercera parte*/
+.enigmaTres{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.enigma .enigmaTres .suelo img{
+	position: absolute;
+    bottom: -81px;
+    left: -11px;
+    width: 103%;
+}
+.enigmaTres .montañaUnoEnigma{
+	width: 115%;
+    bottom: -9px;
+    left: 0;
+}
+.enigmaTres .montañaFondoEnigma{
+	width: 30%;
+	left: -600px;
+	bottom: 60px;
+}
+.enigmaTres .montañaDosEnigma{
+	width: 100%;
+    z-index: 0;
+    bottom: -32px;
+    left: -6px;
+}
+.arlequin{
+	position: absolute;
+	left: 350px;
+	top: -7px;
+	opacity: 0;
+	z-index: 902;
+}
+.enigmaTres .edificioEnigma{
+	width: 14%;
+	position: absolute;
+	right: 200px;
+	top: 0px;
+	z-index: 901
+}
+.enigmaTres .animacion img:nth-child(1){
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -700px;
+    width: 40%;
+    z-index: 901;
+    border-radius: 100px;
+}
+.enigmaTres .animacion img:nth-child(2){
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: -500px;
+    width: 30%;
+    z-index: 901;
+    border-radius: 100px;
+}
+.enigmaTres .animacion p{
+	position: absolute;
+	top: -500px;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+}
+/*  Fin Roma tercera parte*/
+/* Fin Edad Media*/
+/* Moderna */
+.moderna{
+	width: 100%;
+	align-items: center;
+}
+.moderna .cont{
+	width: 5.88%;
+	height:100vh;
+	float: left;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+ /*Moderna primera parte*/
+.modernaUno{
+	width: 100%;
+	position: relative;
+	background: #1afcbf;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.fondoModerna{
+	position: absolute;
+	width: 60%;
+	right: 0;
+	left: 0;
+	bottom: 200px;
+	z-index: 0;
+}
+.casas{
+	position: absolute;
+    width: 100%;
+    bottom: 180px;
+    left: 0;
+    z-index: 3;
+	
+}
+.manga{
+	position: absolute;
+	width: 100%;
+	bottom: 83px;
+	left: 0;
+	z-index: 2;
+	
+}
+.moderna .suelo{
+	width: 110%;
+	height: 120px;
+	position: absolute;
+	bottom: 0px;
+	left: -5px;
+	z-index: 900;
+	background: no-repeat;
+}
+.contModerna{
+	position: absolute;
+	height:60%;
+	text-align: center;
+	top: 65%;
+	right: 0px;
+	left: 0px;
+	z-index: 1;
+}
+.cartel{
+	position: absolute;
+	width: 30%;
+	right: 0;
+	left: 0;
+}
+
+
+
+.modernaUno .arbol{
+	width: 15%;
+	position: absolute;
+	left: 200px;
+	z-index: 700;
+}
+
+.gimnasio{
+	width: 25%;
+	position: absolute;
+	right: 65px;
+	top: -500px;
+	z-index: 901
+}
+/* Fin Moderna primera parte*/
+/* Moderna segunda parte*/
+.modernaDos{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.moderna .modernaDos .suelo img{
+	position: absolute;
+    bottom: -83px;
+    left: -3px;
+    width: 103%;
+}
+.modernaDos .montañaUnoModerna{
+	width: 100%;
+    bottom: 1px;
+    z-index: 00;
+    left: 0;
+}
+.modernaDos .montañaFondoModerna{
+	position: absolute;
+	width: 40%;
+	left: 0;
+	bottom: -20px;
+}
+.modernaDos .montañaDosModerna{
+	position: absolute;
+	width: 15%;
+	z-index: 0;
+	bottom: 0px;
+	right:  0;
+}
+
+.introduccion{
+	position: absolute;
+	width: 400px;
+	height: 100px;
+	margin-top: 20%;
+	box-sizing: border-box;
+	left: 0px;
+	right: 0px;
+	bottom: -500px
+}
+.modernaDos .introduccion img{
+	width: 120%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: -50px;
+	z-index: 301;
+}
+.modernaDos .introduccion p{
+	position: absolute;
+	z-index: 302;
+	left: 80px;
+	right: 0;
+	top: 0;
+	color: black;
+	text-shadow: 1px 2px 1px white;
+	opacity: 0;
+}
+.modernaDos .coliseoGim{
+	position: absolute;
+	width: 25%;
+	right: 0px;
+	top: -600px;
+	z-index: 4;
+}
+.arbolDos{
+	position: absolute;
+	width: 13%;
+	left:  150px;
+
+	z-index: 500;
+}
+/* Fin de Moderna segunda parte*/
+/*  Moderna tercera parte*/
+.modernaTres{
+	position: relative;
+	background: #1afcbf;
+	overflow: hidden;
+
+}
+.moderna .modernaTres .suelo img{
+	position: absolute;
+    bottom: -81px;
+    left: -11px;
+    width: 103%;
+}
+.modernaTres .montañaUnoModerna{
+	width: 115%;
+    bottom: -9px;
+    left: 0;
+}
+.modernaTres .montañaFondoModerna{
+	width: 30%;
+	left: -600px;
+	bottom: 60px;
+}
+.modernaTres .montañaDosModerna{
+	width: 100%;
+    z-index: 0;
+    bottom: -32px;
+    left: -6px;
+}
+.nadia{
+	position: absolute;
+	width: 09%;
+	left: 350px;
+	top: -800px;
+	z-index: 902;
+}
+.moderna .animacion img:nth-child(1){
+	top:-500px;
+
+}
+.moderna .animacion img:nth-child(2){
+	top: -500px;
+	left: 10px;
+	border-radius: 20px;
+	width: 30%
+}
+.moderna .animacion p{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: -370px;
+	opacity: 0;
+	z-index: 1000;
+}
+.modernaTres .edificioModerna{
+	width: 14%;
+	position: absolute;
+	right: 200px;
+	top: 0px;
+	z-index: 901
+}
+/*  Fin Moderna tercera parte*/
+/*  Moderna cuarta parte*/
+/* Fin Moderna cuarta parte*/
+/* Fin Moderna*/
+
+/* Animaciones */
+@keyframes cartelInicio{
+	0%{
+		transform: rotate(180deg);
+	}
+	25%{
+		transform: rotate(360deg);
+	}
+	75%{
+		transform: rotate(320deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+@keyframes bandera{
+	0%{
+		transform: rotate(180deg);
+	}
+	25%{
+		transform: rotate(360deg);
+	}
+	75%{
+		transform: rotate(320deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+.moverArboles{
+	top:-550px;
+}
+.cartelPrehi{
+	bottom: -500px;
+}
+.madero{
+	top: -600px
+}
